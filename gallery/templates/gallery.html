@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>
+        Галерея
+    </title>
+{% endblock %}
+
+{% block body %}
+    <p>Пыся</p>
+    {% for photo in photos %}
+        <img src="..{{ photo.photoThumbnail.url }}">
+    {% endfor %}
+{% endblock %}

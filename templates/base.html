@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    {% block title %}
+
+    {% endblock %}
+</head>
+
+<body>
+        <header>
+            <nav>
+            <input type="checkbox" name="menu" id="btn-menu" />
+            <label for="btn-menu"><i class="fas fa-bars"></i></label>
+                <ul>
+                <li><a href="#About">Главная</a></li>
+                <li><a href="#Security">Обо мне</a></li>
+                <li><a href="#Портфолио"></a></li>
+                <li><a href="#Галлерея">Carees</a></li>
+                <li><a href="#Контакты">Support</a></li>
+                <li><a href="#Отзывы">Donate</a></li>
+                    </ul>
+            </nav>
+        </header>
+        {% block body %}
+
+        {% endblock %}
+
+</body>
+
+</html>
